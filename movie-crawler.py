@@ -17,6 +17,6 @@ for i in s:
     video_download = requests.get(i, headers=headers)
     with open('ts_video/%s.ts' % num, 'wb') as f:
         f.write(video_download.content)
-        print('下载中:', num)
-print('下载完毕')
+        print('Downloading:', num)
+print('Download Complete!')
 
